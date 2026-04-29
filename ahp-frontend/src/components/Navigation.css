@@ -1,0 +1,33 @@
+.navigation {
+  display: flex;
+  background: #f8f9fa;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.nav-tab {
+  flex: 1;
+  padding: 15px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #666;
+}
+
+.nav-tab:hover:not(:disabled) {
+  background: #e9ecef;
+  color: #667eea;
+}
+
+.nav-tab.active {
+  background: white;
+  color: #667eea;
+  border-bottom: 3px solid #667eea;
+}
+
+.nav-tab:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -1,0 +1,117 @@
+.alternatives-form {
+  animation: fadeIn 0.5s ease;
+}
+
+.alternatives-list {
+  display: grid;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.alternative-item {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.alternative-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #667eea;
+}
+
+.alternative-header h3 {
+  color: #667eea;
+  font-size: 1.3em;
+}
+
+.btn-remove-alt {
+  padding: 5px 10px;
+  background: #f56565;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.btn-remove-alt:hover:not(:disabled) {
+  background: #e53e3e;
+}
+
+.btn-remove-alt:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.scores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.score-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.score-field label {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.score-field input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.score-field input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.add-alternative {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.add-alternative input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.add-alternative button {
+  padding: 10px 20px;
+  background: #48bb78;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-alternative button:hover {
+  background: #38a169;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
