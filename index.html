@@ -1,0 +1,110 @@
+# Créer un index.html à la racine du dépôt
+cat > index.html << 'EOF'
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHP Decision Tool</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 800px;
+            margin: 20px;
+        }
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            background: #5a67d8;
+        }
+        .info {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-align: left;
+        }
+        code {
+            background: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        footer {
+            margin-top: 30px;
+            color: #999;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 AHP Decision Tool</h1>
+        <div class="subtitle">Analytic Hierarchy Process pour l'aide à la décision multicritère</div>
+        
+        <div class="links">
+            <a href="https://github.com/okomothomyugep-arch/ahp-decision-tool" class="btn">📦 Voir sur GitHub</a>
+            <a href="frontend/build/index.html" class="btn">🚀 Lancer l'application</a>
+        </div>
+        
+        <div class="info">
+            <h3>📋 Pour utiliser l'application :</h3>
+            <ol>
+                <li>Clonez le dépôt : <code>git clone https://github.com/okomothomyugep-arch/ahp-decision-tool.git</code></li>
+                <li>Démarrez le backend : <code>cd backend && mvn spring-boot:run</code></li>
+                <li>Démarrez le frontend : <code>cd frontend && npm start</code></li>
+                <li>Ouvrez <code>http://localhost:3000</code></li>
+            </ol>
+            <p>Ou utilisez <strong>Docker</strong> : <code>docker-compose up</code></p>
+        </div>
+        
+        <footer>
+            Développé avec ❤️ utilisant Spring Boot et React
+        </footer>
+    </div>
+</body>
+</html>
+EOF
+
+<!-- # Ajouter le fichier
+git add index.html
+git commit -m "feat: Add landing page for GitHub Pages"
+git push origin main -->
