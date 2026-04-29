@@ -1,0 +1,292 @@
+# ============================================
+# AHP Decision Tool - Main .gitignore
+# Pour structure monorepo (backend + frontend)
+# ============================================
+
+# -------------------------------
+# IDEs et éditeurs
+# -------------------------------
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.classpath
+.settings/
+*.iml
+.factorypath
+
+# -------------------------------
+# Fichiers systèmes et OS
+# -------------------------------
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+# -------------------------------
+# BACKEND - Java / Spring Boot
+# -------------------------------
+
+# Compiled class files
+*/target/
+*/**/target/
+*.class
+
+# Log files
+*.log
+*.log.gz
+logs/
+*/logs/
+
+# Package files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven
+*/pom.xml.tag
+*/pom.xml.releaseBackup
+*/pom.xml.versionsBackup
+*/pom.xml.next
+*/release.properties
+*/dependency-reduced-pom.xml
+*/buildNumber.properties
+*/.mvn/timing.properties
+*/.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+*/.gradle/
+*/build/
+*/gradle/
+*/gradlew
+*/gradlew.bat
+
+# Spring Boot
+*/spring-boot-starter-parent/
+*/application-local.properties
+*/application-dev.properties
+*/bootstrap-local.yml
+
+# -------------------------------
+# FRONTEND - React / Node.js
+# -------------------------------
+
+# Node modules
+*/node_modules/
+*/**/node_modules/
+
+# Build outputs
+*/build/
+*/dist/
+*/**/build/
+*/**/dist/
+
+# Environment variables
+*/.env
+*/.env.local
+*/.env.development.local
+*/.env.test.local
+*/.env.production.local
+*/.env.staging
+
+# NPM/Yarn logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Package manager caches
+*/.pnpm-store/
+*/.npm/
+*/.yarn/
+
+# TypeScript
+*.tsbuildinfo
+
+# React
+*/service-worker.js
+*/sw.js
+*/asset-manifest.json
+*/precache-manifest.*
+
+# Next.js (si vous migrez un jour)
+*/.next/
+*/out/
+
+# Gatsby (si vous migrez un jour)
+*/public/
+*/cache/
+
+# -------------------------------
+# DOCKER
+# -------------------------------
+*.pid
+docker-compose.override.yml
+docker-compose.*.yml
+!.docker/docker-compose.*.yml
+
+# Docker volumes
+/.docker/
+/volumes/
+
+# -------------------------------
+# COUVERTURE DE CODE ET TESTS
+# -------------------------------
+*.coverprofile
+*.cov
+*.lcov
+coverage/
+.nyc_output/
+*.test
+*.test.js
+*.spec.js
+
+# Backend tests coverage
+*/target/surefire-reports/
+*/target/failsafe-reports/
+*/test-output/
+*/jacoco.exec
+
+# Frontend tests coverage
+*/coverage/
+*/**/__snapshots__/
+
+# -------------------------------
+# BASE DE DONNÉES
+# -------------------------------
+*.db
+*.sqlite
+*.sqlite3
+*.db3
+
+# -------------------------------
+# SECURITÉ
+# -------------------------------
+*.pem
+*.key
+*.crt
+*.p12
+*.jks
+*.keystore
+*.truststore
+.secrets/
+secrets/
+.env.secrets
+
+# -------------------------------
+# FICHIERS DE CONFIGURATION LOCAUX
+# -------------------------------
+*.local
+*.development
+*.staging
+config.local.*
+application-local.yml
+application-local.properties
+bootstrap-local.yml
+
+# -------------------------------
+# OUTILS ET DIVERS
+# -------------------------------
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Intellij
+*.iws
+*.ipr
+out/
+
+# Eclipse
+*.pydevproject
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+.loadpath
+
+# NetBeans
+/nbproject/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# JEnv
+.java-version
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+.dirlocal
+
+# Windows
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Archives
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Backups
+*.bak
+*.orig
+*.old
+*.tmp
+
+# -------------------------------
+# FICHIERS SPÉCIFIQUES AU PROJET
+# -------------------------------
+
+# Logs spécifiques à l'application AHP
+ahp-decision-tool.log
+ahp-frontend.log
+
+# Fichiers temporaires de l'application
+temp/
+tmp/
+*.pid
+
+# Rapports
+reports/
+test-reports/
+
+# Uploads (si implémenté plus tard)
+uploads/
+downloads/
+
+# Configuration personnalisée
+.custom_env
+.env.custom
